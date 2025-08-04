@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# C++ Data Structures & Algorithms (DSA) + LeetCode Solutions
+
+# C++ Data Structures & Algorithms (DSA) + LeetCode Solutions 🔥🔥🔥
 
 ![Language](https://img.shields.io/badge/Language-C%2B%2B-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
