@@ -1,0 +1,10 @@
+# Ignore Visual Studio Code specific files
+.vscode/
+
+# Ignore compiled executables and object files
+*.exe
+*.out
+*.o
+
+# Ignore temporary files created by VS Code extensions
+tempCodeRunnerFile.cpp
