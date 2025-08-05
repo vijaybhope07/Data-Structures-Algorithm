@@ -110,8 +110,7 @@ Questions? Ideas?
 Questions? Ideas?
 Let’s connect!
 
-- **LinkedIn:** Ali Us Samad  
-- **LinkedIn:** Ali Us Samad
+- **LinkedIn:** https://www.linkedin.com/in/ali-samad-841b11301/
 - **Email:** aliussamad@gmail.com
 
 ---
