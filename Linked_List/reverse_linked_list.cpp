@@ -1,23 +1,22 @@
-// we will be writing a code for reversing a linked list
-#include <iostream>
+#include<iostream>
 using namespace std;
 struct Node{
     int data;
-    Node* next;
-    Node(int val): data(val),next(nullptr) {}
+    Node * next;
+    Node(int val): data(val), next(nullptr){}
 };
-Node* reverseLinked(Node * head){
+Node * reverseLinkedList(Node * head){
     Node * curr = head;
     Node * prev = nullptr;
     while(curr != nullptr){
-        Node * next = curr->next;
+        Node *next = curr->next;
         curr->next = prev;
         prev = curr;
         curr = next;
     }
     return prev;
 }
-void printLinkedList(Node *head){
+void printList(Node * head){
     while(head){
         cout << head->data << " ";
         head = head->next;
@@ -30,10 +29,11 @@ int main(){
     head->next->next = new Node(3);
     head->next->next->next = new Node(4);
     head->next->next->next->next = new Node(5);
-    cout << "Original Linked List: "; 
-    printLinkedList(head);
-    head = reverseLinked(head);
-    cout << "Reversed Linked List: ";
-    printLinkedList(head);
+    head->next->next->next->next->next = new Node(6);
+    cout << "Original Linked List: " << endl;
+    printList(head);
+    head = reverseLinkedList(head);
+    cout << "Reversed Linked List: " << endl;
+    printList(head);
     return 0;
 }
