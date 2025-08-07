@@ -17,7 +17,10 @@ public:
         }
         char temp = board[i][j];
         board[i][j] = '\0';
-        bool found = backtrack(i + 1, j, k + 1) || backtrack(i - 1, j , k + 1) || backtrack(i, j + 1,  k + 1) || backtrack(i , j - 1, k + 1);
+        bool found = backtrack(i + 1, j, k + 1) ||
+                     backtrack(i - 1, j , k + 1) || 
+                     backtrack(i, j + 1,  k + 1) ||
+                      backtrack(i , j - 1, k + 1);
         board[i][j] = temp;
         return found;
     }
