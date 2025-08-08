@@ -28,8 +28,12 @@ string multiply(string num1, string num2) {
     return result;
 }
 int main() {
-    string num1 = "123";
-    string num2 = "456";
+    string num1;
+    string num2;
+    cout << "Enter the String Num1: " ;
+    cin >> num1;
+    cout << "Enter the String Num2: ";
+    cin >> num2; 
     string answer = multiply(num1, num2);
     cout << "The string multiplied by " << num1 << " and " << num2 << " is " << answer << endl;
     return 0;
