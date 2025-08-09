@@ -1,8 +1,8 @@
 #include<iostream>
-#include<queue>
 #include<vector>
+#include<queue>
 using namespace std;
-int findKthLargest(vector<int>& nums, int k){
+int findkthLargestElement(vector<int>& nums, int k){
     priority_queue<int, vector<int>, greater<int>> minheap;
     for(int num : nums){
         minheap.push(num);
@@ -10,12 +10,21 @@ int findKthLargest(vector<int>& nums, int k){
             minheap.pop();
         }
     }
-    return minheap.top();
+    minheap.top();
 }
 int main(){
-    vector<int> nums = {3,2,1,5,6,4};
-    int k = 2;
-    int result = findKthLargest(nums, k);
-    cout << "The Kth largets element is " << result << endl;
+    int n;
+    int k;
+    cout << "Enter the value of N: " << endl;
+    cin >> n;
+    vector<int> nums(n);
+    cout << "Enter the elements of the array: " << endl;
+    for(int i = 0; i < n; i++){
+        cin >> nums[i];
+    }
+    cout << "Enter the value of K: " << endl;
+    cin >> k;
+    int result = findkthLargestElement(nums, k);
+    cout << "The " << k << "th Largest element in the array is " << result << endl;
     return 0;
 }
