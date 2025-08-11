@@ -3,13 +3,11 @@ using namespace std;
 #include<algorithm>
 #include<string>
 #include<cmath>
-
 string getSortedStr(int n) {
         string s = to_string(n);
         sort(begin(s), end(s));
         return s;
     }
-
     bool reorderedPowerOf2(int n) {
         string s = getSortedStr(n);
         for(int p = 0; p <= 29; p++) {
