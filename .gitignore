@@ -8,3 +8,6 @@
 
 # Ignore temporary files created by VS Code extensions
 tempCodeRunnerFile.cpp
+
+# Ignore build directories
+build/
